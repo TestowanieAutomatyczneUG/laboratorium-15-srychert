@@ -5,7 +5,7 @@ from selenium.webdriver.common.by import By
 
 class MyTestCase(unittest.TestCase):
     def test_title(self):
-        driver = webdriver.Chrome(executable_path='./chromedriver')
+        driver = webdriver.Chrome(executable_path='../drivers/chromedriver')
         driver.implicitly_wait(10)
         driver.get("https://duckduckgo.com/")
         driver.find_element(By.ID, "search_form_input_homepage").send_keys("Selenium")
